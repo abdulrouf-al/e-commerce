@@ -13,6 +13,7 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
     media &&
     typeof media !== 'string' &&
     `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${media.filename}`
+
   return (
     <section className={classes.hero}>
       <div className={classes.heroWrapper} style={{ backgroundImage: `url(${mediaUrl})` }}>

@@ -19,7 +19,7 @@ export const PRODUCT = `
         id
         title
         stripeProductID
-        ${PRODUCT_CATEGORIES} 
+        ${PRODUCT_CATEGORIES}
         layout {
           ${CALL_TO_ACTION}
           ${CONTENT}

@@ -52,7 +52,7 @@ export default async function Product({ params: { slug } }) {
                 type: 'h3',
                 children: [
                   {
-                    text: 'Related s',
+                    text: 'Related Products',
                   },
                 ],
               },

@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, SetStateAction, useContext, useState } from 'react'
+import { createContext, ReactNode, SetStateAction, useContext, useState } from 'react'
 
 interface IContextType {
   categoryFilters: string[]
@@ -20,7 +20,8 @@ const FilterContext = createContext<IContextType>(INITIAL_FILTER_DATA)
 
 export const FilterProvider = ({ children }: { children: React.ReactNode }) => {
   const [categoryFilters, setCategoryFilters] = useState([])
-  const [sort, setSort] = useState('-createdAt') // will show the newest products first
+  const [sort, setSort] = useState('-createdAt')
+
   return (
     <FilterContext.Provider
       value={{

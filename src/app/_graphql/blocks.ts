@@ -42,7 +42,7 @@ export const ARCHIVE_BLOCK = `
   introContent
   populateBy
   relationTo
-  ${PRODUCT_CATEGORIES} 
+  ${PRODUCT_CATEGORIES}
   limit
   selectedDocs {
     relationTo
@@ -52,7 +52,6 @@ export const ARCHIVE_BLOCK = `
         slug
         title
         priceJSON
-        ${META}
       }
     }
   }
